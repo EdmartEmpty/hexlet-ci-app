@@ -1,0 +1,10 @@
+name: Actions Demo
+run-name: Demo 🚀
+on: push
+jobs:
+  test-make-func:
+    runs-on: ubuntu-latest
+    steps:
+     - run: make install
+     - run: make test
+     - run: make lint
